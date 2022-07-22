@@ -6,7 +6,6 @@ import GuaranteeChar from "./GuaranteeChar";
 import GuaranteeWeap from "./GuaranteeWeap";
 import GuaranteeStd from "./GuaranteeStd";
 import RollCounts from "./RollCounts";
-import InputFields from "../inputFields/InputFields";
 
 export default function Calculators ( {primoCount, genCount, intFateCount, 
                                     acqFateCount, charCount, weapCount, stdCount} ) {
@@ -37,18 +36,6 @@ export default function Calculators ( {primoCount, genCount, intFateCount,
     return (
         <div>
             <div>
-                <GuaranteeChar 
-                totalPrimoCount = {totalPrimoCount}
-                intFateCount = {intFateCount}
-                charCount = {charCount}
-                />
-            </div>
-            <div>
-                <GuaranteeStd
-                
-                />
-            </div>
-            <div>
                 <RollCounts 
                 totalPrimoCount = {totalPrimoCount}
                 intFateCount = {intFateCount}
@@ -58,6 +45,28 @@ export default function Calculators ( {primoCount, genCount, intFateCount,
                 stdCount = {stdCount}
                 />
             </div>
+            <div>
+                <GuaranteeChar 
+                totalPrimoCount = {totalPrimoCount}
+                intFateCount = {intFateCount}
+                charCount = {charCount}
+                />
+            </div>
+                <GuaranteeWeap
+                totalPrimoCount = {totalPrimoCount}
+                intFateCount = {intFateCount}
+                weapCount = {weapCount}
+                />
+            <div>
+                <GuaranteeStd
+                totalPrimoCount = {totalPrimoCount}
+                acqFateCount = {acqFateCount}
+                stdCount = {stdCount}
+                charCount = {charCount}
+                weapCount = {weapCount}
+                />
+            </div>
+            
         </div>
     );
 }

@@ -1,3 +1,9 @@
+/*
+    Calculates rolls/primogems needed to guarantee 5* and event banner 5* based on
+     total user primo count, int. fate count, and character event pity.
+     Includes checkbox to determine guaranteed banner 5* calculation used
+*/
+
 import React, {useState} from "react";
 export default function GuaranteeChar ({totalPrimoCount, intFateCount, charCount}) {
     
@@ -6,6 +12,7 @@ export default function GuaranteeChar ({totalPrimoCount, intFateCount, charCount
     let rollsToFiveStar = 90 - charCount;
     let primosForFiveStar = 14400 - (charCount * 160);
 
+    //checks if isChecked is true/false; if true, use first value. Otherwise use alt calculation equation
     let rollstoGuaranteed = isChecked ? rollsToFiveStar : (180 - charCount);
     let primosForGuaranteed =  isChecked ? primosForFiveStar : 28800 - (charCount * 160);
 
@@ -17,8 +24,11 @@ export default function GuaranteeChar ({totalPrimoCount, intFateCount, charCount
     return (
         <div>
             <h1>Character Event Wish</h1>
+            <p>
+                How many wishes or primogems you need to hit full pity in the Character Event Wish banner
+            </p>
             <label>
-                Rolls to 5*
+                Wishes to Guaranteed 5*
                 <br></br>
                 <input type="number" value={rollsToFiveStar && Math.max(0, rollsToFiveStar)} readOnly></input>
             </label>
@@ -37,15 +47,15 @@ export default function GuaranteeChar ({totalPrimoCount, intFateCount, charCount
             <br></br>
             <br></br>
             <label>
-                Rolls to guaranteed banner 5* 
+                Wishes to Guaranteed Banner 5* 
                 <br></br>
-                <input type="number" value={rollstoGuaranteed} readOnly></input>
+                <input type="number" value={rollstoGuaranteed && Math.max(0, rollstoGuaranteed)} readOnly></input>
             </label>
             <br></br>
             <label>
                 Total Primogems Required
                 <br></br>
-                <input type="number" value={primosForGuaranteed} readOnly></input>
+                <input type="number" value={primosForGuaranteed && Math.max(0, primosForGuaranteed)} readOnly></input>
             </label>
             <br></br>
             <label>
@@ -56,7 +66,7 @@ export default function GuaranteeChar ({totalPrimoCount, intFateCount, charCount
             <br></br>
             <label>
                 <input type="checkbox" className="checkbox" checked={isChecked} onChange={handleBannerCheck}></input>
-                Last 5* was banner character
+                Last 5* was not the banner character
             </label>
             
         </div>
