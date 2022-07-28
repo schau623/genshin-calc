@@ -4,7 +4,7 @@
 export default function Conversion() {
     return (
         <>
-            <div className = "conversion_page"></div>
+            <div className = "conversion"></div>
         </>
     );
 }

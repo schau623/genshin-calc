@@ -1,0 +1,40 @@
+.navbar {
+    width:100%;
+    background-color: rgb(69, 78, 93);
+    top:0;
+    position:absolute;
+    display:flex;
+    box-shadow:-1px 2px 5px rgb(24, 24, 24, 0.1);
+}
+
+.navbar_box{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    margin:5px;
+    border-style: solid;
+    border-color: rgb(81, 89, 105);
+}
+
+.navbar_wrapper {
+    display:flex;
+    align-items: center;
+    margin:auto;
+}
+
+.title {
+    color: rgb(236, 229, 213);
+}
+.img_logo {
+    height: 60px;
+    width: 60px;
+    padding-right:6px;
+}
+
+.logo_link {
+    display:flex;
+    flex-wrap: nowrap;
+    font-size: 15px;
+    align-items: center;
+    padding:5px;
+}

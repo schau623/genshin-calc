@@ -6,6 +6,11 @@
     prevent NaN errors
 */
 import React, {useState} from "react";
+import "./InputFields.css"
+import primogem_icon from "../../images/Icon_Primogem.png";
+import genCrystal_icon from "../../images/Icon_Genesis_Crystal.png"
+import intFate_icon from "../../images/Icon_Intertwined_Fate.png"
+import acqFate_icon from "../../images/Icon_Acquaint_Fate.png"
 
 export default function InputFields( {setPrimoCount, setGenCount, setIntFateCount, 
                                     setAcqFateCount, setCharCount, setWeapCount, setStdCount} ) {
@@ -42,111 +47,153 @@ export default function InputFields( {setPrimoCount, setGenCount, setIntFateCoun
     };
     */
     return (
-        <form>
-            <label htmlFor="labelTitle">
-                Primogems
-                <br></br>
-               <input type="number" min={0} value={tempPrimoCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempPrimoCount(newTempValue);
-                        setPrimoCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                /> 
-            </label><br></br>
-            
-            <label htmlFor="labelTitle">
-                Genesis Crystals
-                <br></br>
-               <input type="number" min={0} value={tempGenCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempGenCount(newTempValue);
-                        setGenCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                />  
-            </label><br></br>
-            
-            <label htmlFor="labelTitle">
-                Intertwined Fates
-                <br></br>
-               <input type="number" min={0} value={tempIntFateCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempIntFateCount(newTempValue);
-                        setIntFateCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                />   
-            </label><br></br>
-            
-            <label htmlFor="labelTitle">
-                Acquaint Fates
-                <br></br>
-               <input type="number" min={0} value={tempAcqFateCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempAcqFateCount(newTempValue);
-                        setAcqFateCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                /> 
-            </label><br></br>
-            
-            <label htmlFor="labelTitle">
-                Character Event Pity
-                <br></br>
-               <input type="number" min={0} value={tempCharCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempCharCount(newTempValue);
-                        setCharCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                />  
-            </label><br></br>
-            
-            <label htmlFor="labelTitle">
-                Weapon Event Pity
-                <br></br>
-               <input type="number" min={0} value={tempWeapCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempWeapCount(newTempValue);
-                        setWeapCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                /> 
-            </label><br></br>
-            
-            <label htmlFor="labelTitle">
-                Standard Pity
-                <br></br>
-               <input type="number" min={0} value={tempStdCount || ''} onChange={ (e) => 
-                    {
-                        const newTempValue = e.target.value;
-                        setTempStdCount(newTempValue);
-                        setStdCount(newTempValue);
-                    }
-                }
-                onPaste={preventPasteNegative}
-                onKeyPress={preventMinus}
-                /> 
-            </label><br></br>
+        <form className="input_form">
+            <div className="input_wrapper">
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <div className="input_title">
+                                <img alt="Primogem icon" className="input_icon" src={primogem_icon}/>
+                                <label htmlFor="Primogems">Primogems</label>
+                            </div>
+                            <input className="num_input" type="number" min={0} value={tempPrimoCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempPrimoCount(newTempValue);
+                                        setPrimoCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            /> 
+                        </div>
+                    </div>
+
+                </div>
+                <div className="content_box"> 
+                    <div className="content_border">
+                        <div className="content_field">
+                            <div className="input_title">
+                                <img alt="Primogem icon" className="input_icon" src={genCrystal_icon}/>
+                                <label htmlFor="Genesis Crystals">Genesis Crystals</label>
+                            </div>
+                            <input className="num_input" type="number" min={0} value={tempGenCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempGenCount(newTempValue);
+                                        setGenCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            />  
+                        </div>
+                    </div>
+
+                </div>
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field"> 
+                            <div className="input_title">
+                                <img alt="Primogem icon" className="input_icon" src={intFate_icon}/>
+                                <label htmlFor="Intertwined Fates">Intertwined Fates </label>
+                            </div>
+                            <input className="num_input" type="number" min={0} value={tempIntFateCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempIntFateCount(newTempValue);
+                                        setIntFateCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            />   
+                        </div>
+                    </div>
+
+                </div>
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <div className="input_title">
+                                <img alt="Primogem icon" className="input_icon" src={acqFate_icon}/>
+                                <label htmlFor="Acquaint Fates">Acquaint Fates</label>
+                            </div>
+                            <input className="num_input" type="number" min={0} value={tempAcqFateCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempAcqFateCount(newTempValue);
+                                        setAcqFateCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            /> 
+                        </div>
+                    </div>
+
+                </div>
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <div className="input_title">
+                                <label htmlFor="Character Event Pity">Character Event Pity</label>
+                            </div>
+                            
+                            <input className="num_input" type="number" min={0} value={tempCharCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempCharCount(newTempValue);
+                                        setCharCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            />  
+                        </div>
+                    </div>
+
+                </div>
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <div className="input_title">
+                                <label htmlFor="Weapon Event Pity">Weapon Event Pity</label>
+                            </div>
+                            <input className="num_input" type="number" min={0} value={tempWeapCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempWeapCount(newTempValue);
+                                        setWeapCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            /> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <div className="input_title">
+                                <label htmlFor="Standard Pity">Standard Pity</label>
+                            </div>
+                            <input className="num_input" type="number" min={0} value={tempStdCount || ''} onChange={ (e) => 
+                                    {
+                                        const newTempValue = e.target.value;
+                                        setTempStdCount(newTempValue);
+                                        setStdCount(newTempValue);
+                                    }
+                                }
+                                onPaste={preventPasteNegative}
+                                onKeyPress={preventMinus}
+                            /> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     );
 }

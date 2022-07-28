@@ -22,53 +22,61 @@ export default function GuaranteeChar ({totalPrimoCount, intFateCount, charCount
         setChecked(current => !current);
     };
     return (
-        <div>
-            <h1>Character Event Wish</h1>
-            <p>
+        <div className="calc_wrapper">
+            <h1 className="section_header">Character Event Wish</h1>
+            <p className="desc">
                 How many wishes or primogems you need to hit full pity in the Character Event Wish banner
             </p>
-            <label>
-                Wishes to Guaranteed 5*
+            <div className="content_fields">
+                <div className="content_field"> 
+                    <label className="calc_label">
+                        Wishes to Guaranteed 5*
+                    </label>
+                    <input className="num_input" type="number" value={rollsToFiveStar && Math.max(0, rollsToFiveStar)} readOnly></input>
+                </div>
+
+                <div className="content_field"> 
+                    <label className="calc_label">
+                        Total Primogems Required
+                    </label>
+                    <input className="num_input" type="number" value={primosForFiveStar && Math.max(0, primosForFiveStar)} readOnly></input>
+                </div>
+
+                <div className="content_field"> 
+                    <label className="calc_label">
+                        Remaining Primogems Needed
+                    </label>                        
+                    <input className="num_input" type="number" value={primosNeeded && Math.max(0, primosNeeded)} readOnly></input>
+                </div>
                 <br></br>
-                <input type="number" value={rollsToFiveStar && Math.max(0, rollsToFiveStar)} readOnly></input>
-            </label>
-            <br></br>
-            <label>
-                Total Primogems Required
-                <br></br>
-                <input type="number" value={primosForFiveStar && Math.max(0, primosForFiveStar)} readOnly></input>
-            </label>
-            <br></br>
-            <label>
-                Remaining Primogems Needed
-                <br></br>
-                <input type="number" value={primosNeeded && Math.max(0, primosNeeded)} readOnly></input>
-            </label>
-            <br></br>
-            <br></br>
-            <label>
-                Wishes to Guaranteed Banner 5* 
-                <br></br>
-                <input type="number" value={rollstoGuaranteed && Math.max(0, rollstoGuaranteed)} readOnly></input>
-            </label>
-            <br></br>
-            <label>
-                Total Primogems Required
-                <br></br>
-                <input type="number" value={primosForGuaranteed && Math.max(0, primosForGuaranteed)} readOnly></input>
-            </label>
-            <br></br>
-            <label>
-                Remaining Primogems Needed
-                <br></br>
-                <input type="number" value={primosNeededGuaranteed && Math.max(0, primosNeededGuaranteed)} readOnly></input>
-            </label>
-            <br></br>
-            <label>
-                <input type="checkbox" className="checkbox" checked={isChecked} onChange={handleBannerCheck}></input>
-                Last 5* was not the banner character
-            </label>
-            
+                <div className="content_field"> 
+                    <label className="calc_label">
+                        Wishes to Guaranteed Banner 5* 
+                    </label>
+                    <input className="num_input" type="number" value={rollstoGuaranteed && Math.max(0, rollstoGuaranteed)} readOnly></input>
+                </div>
+
+                <div className="content_field">
+                    <label className="calc_label">
+                        Total Primogems Required
+                    </label>
+                    <input className="num_input" type="number" value={primosForGuaranteed && Math.max(0, primosForGuaranteed)} readOnly></input>
+                </div>
+
+                <div className="content_field"> 
+                    <label className="calc_label">
+                        Remaining Primogems Needed
+                    </label>
+                    <input className="num_input" type="number" value={primosNeededGuaranteed && Math.max(0, primosNeededGuaranteed)} readOnly></input>
+                </div>
+                <div className="calc_checkbox"> 
+                    <input type="checkbox" className="checkbox" checked={isChecked} onChange={handleBannerCheck}/>
+                    <br></br>
+                    <label className="calc_label_checkbox">
+                        Last 5* was not the banner character
+                    </label>
+                </div>
+            </div>
         </div>
     );
 }

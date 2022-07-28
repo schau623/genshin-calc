@@ -1,0 +1,10 @@
+.home {
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 90vw;
+    margin: 0 auto;
+}

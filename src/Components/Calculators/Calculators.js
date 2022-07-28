@@ -6,6 +6,7 @@ import GuaranteeChar from "./GuaranteeChar";
 import GuaranteeWeap from "./GuaranteeWeap";
 import GuaranteeStd from "./GuaranteeStd";
 import RollCounts from "./RollCounts";
+import "./Calculators.css"
 
 export default function Calculators ( {primoCount, genCount, intFateCount, 
                                     acqFateCount, charCount, weapCount, stdCount} ) {
@@ -34,39 +35,61 @@ export default function Calculators ( {primoCount, genCount, intFateCount,
     let totalPrimoCount = primoCount + genCount;
     
     return (
-        <div>
-            <div>
-                <RollCounts 
-                totalPrimoCount = {totalPrimoCount}
-                intFateCount = {intFateCount}
-                acqFateCount = {acqFateCount}
-                charCount = {charCount}
-                weapCount = {weapCount}
-                stdCount = {stdCount}
-                />
+        <div className="calculators">
+            <div className="calculators_wrapper">
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <RollCounts 
+                                totalPrimoCount = {totalPrimoCount}
+                                intFateCount = {intFateCount}
+                                acqFateCount = {acqFateCount}
+                                charCount = {charCount}
+                                weapCount = {weapCount}
+                                stdCount = {stdCount}
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="content_box">
+                    <div className="content_border">
+                        <div className="content_field">
+                            <GuaranteeChar 
+                                totalPrimoCount = {totalPrimoCount}
+                                intFateCount = {intFateCount}
+                                charCount = {charCount}
+                            /> 
+                        </div>
+                    </div>
+                </div>
+
+                <div className="content_box">
+                    <div className="content_border"> 
+                        <div className="content_field">
+                            <GuaranteeWeap
+                                totalPrimoCount = {totalPrimoCount}
+                                intFateCount = {intFateCount}
+                                weapCount = {weapCount}
+                            />
+                        </div>
+                    </div> 
+                </div>
+                    
+                <div className="content_box">
+                    <div className="content_border"> 
+                        <div className="content_field">
+                            <GuaranteeStd
+                                totalPrimoCount = {totalPrimoCount}
+                                acqFateCount = {acqFateCount}
+                                stdCount = {stdCount}
+                                charCount = {charCount}
+                                weapCount = {weapCount}
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <GuaranteeChar 
-                totalPrimoCount = {totalPrimoCount}
-                intFateCount = {intFateCount}
-                charCount = {charCount}
-                />
-            </div>
-                <GuaranteeWeap
-                totalPrimoCount = {totalPrimoCount}
-                intFateCount = {intFateCount}
-                weapCount = {weapCount}
-                />
-            <div>
-                <GuaranteeStd
-                totalPrimoCount = {totalPrimoCount}
-                acqFateCount = {acqFateCount}
-                stdCount = {stdCount}
-                charCount = {charCount}
-                weapCount = {weapCount}
-                />
-            </div>
-            
         </div>
     );
 }
