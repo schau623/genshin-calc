@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.6f9dfc94.css",
+    "main.js": "/react-gh-pages/static/js/main.2f54ab23.js",
+    "static/js/787.7ba7bfd1.chunk.js": "/react-gh-pages/static/js/787.7ba7bfd1.chunk.js",
+    "static/media/Icon_WishCalc.png": "/react-gh-pages/static/media/Icon_WishCalc.f1421c0dcd1fd65a25f3.png",
+    "static/media/Bonobo Bold.ttf": "/react-gh-pages/static/media/Bonobo Bold.8924d49e99d552021e1c.ttf",
+    "static/media/Icon_Intertwined_Fate.png": "/react-gh-pages/static/media/Icon_Intertwined_Fate.81f80cc7d7762b7f6e22.png",
+    "static/media/Icon_Acquaint_Fate.png": "/react-gh-pages/static/media/Icon_Acquaint_Fate.564d84db3e28f20c54ea.png",
+    "static/media/Icon_Genesis_Crystal.png": "/react-gh-pages/static/media/Icon_Genesis_Crystal.16c932c4bb633ad87b0e.png",
+    "static/media/Icon_Primogem.png": "/react-gh-pages/static/media/Icon_Primogem.b9823f8226d954971e9d.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.6f9dfc94.css.map": "/react-gh-pages/static/css/main.6f9dfc94.css.map",
+    "main.2f54ab23.js.map": "/react-gh-pages/static/js/main.2f54ab23.js.map",
+    "787.7ba7bfd1.chunk.js.map": "/react-gh-pages/static/js/787.7ba7bfd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f9dfc94.css",
+    "static/js/main.2f54ab23.js"
+  ]
+}
