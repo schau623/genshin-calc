@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.input_form .content_box {
+    background-color: rgb(255, 254, 250);
+}
+
 /*
 .input_field_box {
     padding:4px;
@@ -47,4 +51,41 @@
     color: rgb(58, 67, 82);
     margin:4px;
     font-size: 25px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .input_form {
+        max-width: 28vw;
+        padding-left:1.5vw;
+    }
+
+    .input_form .num_input {
+        height:30px;
+        font-size: 20px;
+    }
+
+    .input_form .content_field {
+       padding:0; 
+    }
+
+    .input_form label {
+        font-size: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

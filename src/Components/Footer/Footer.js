@@ -15,7 +15,7 @@ export default function Footer() {
                     </div>
                     <div className="footer_bottom">
                         <Link className="footer_link" to="/about">About</Link>
-                        <p className="footer_link" >FAQ</p>
+                        {/*<p className="footer_link" >FAQ</p>*/}
                         <p className="footer_link">Contact: schau9919@gmail.com</p>
                     </div>
                 </div>

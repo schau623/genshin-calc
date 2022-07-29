@@ -21,7 +21,9 @@ export default function About() {
                                 <div className="desc">
                                     <p>
                                         Wish Calculator is designed to help players better 
-                                        manage their primogems and fates in the Genshin Impact.
+                                        manage their primogems and fates in <i>Genshin Impact</i> by performing certain 
+                                        calculations; usually the amount of wishes or rolls the player can make with their
+                                        current number of primogems and fates.
                                         <br></br>
                                         <br></br>
                                         Based on DQueen13's (zebra#4539 on Discord) Primogem/Fate Tracker Excel sheet.

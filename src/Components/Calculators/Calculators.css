@@ -8,6 +8,10 @@
     text-align: center;
 } */
 
+.calc_wrapper .content_field {
+    padding-bottom: 20px;
+}
+
 .calc_label {
     font-size: 25px;
 }
@@ -44,4 +48,23 @@
     width: 35px;
     height: 35px;
     background-color:rgb(218, 213, 203);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .calc_label {
+        font-size: 22px;
+    }
+
+    .calculators .content_field, .calc_checkbox {
+        
+    } 
+    
+    .content_fields .content_field {
+        padding-left:0;
+    }
+
+    .calc_btns {
+        justify-content: left;
+    }
 }

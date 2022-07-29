@@ -5,6 +5,7 @@
     position:absolute;
     display:flex;
     box-shadow:-1px 2px 5px rgb(24, 24, 24, 0.1);
+    height: 92px;
 }
 
 .navbar_box{
@@ -23,6 +24,7 @@
 }
 
 .title {
+    font-size:25px;
     color: rgb(236, 229, 213);
 }
 .img_logo {
