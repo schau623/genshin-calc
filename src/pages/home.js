@@ -3,7 +3,7 @@ import InputFields from "../Components/inputFields/InputFields";
 import Calculators from "../Components/Calculators/Calculators";
 import Footer from "../Components/Footer/Footer";
 import Navbar from '../Components/NavBar/Navbar';
-import "../styles/home.css"
+import "./styles/home.css"
 /* 
     Main page - calculators and user input fields
 */

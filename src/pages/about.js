@@ -4,7 +4,7 @@
 
 import Footer from "../Components/Footer/Footer";
 import Navbar from '../Components/NavBar/Navbar';
-import "../styles/home.css"
+import "./styles/home.css"
 
 export default function About() {
     return (
