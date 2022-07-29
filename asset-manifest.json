@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/wish-calculator/static/css/main.b42d1d80.css",
-    "main.js": "/wish-calculator/static/js/main.4d69415b.js",
-    "static/js/787.a90ab6a4.chunk.js": "/wish-calculator/static/js/787.a90ab6a4.chunk.js",
-    "static/media/Icon_WishCalc.png": "/wish-calculator/static/media/Icon_WishCalc.f1421c0dcd1fd65a25f3.png",
-    "static/media/Bonobo Bold.ttf": "/wish-calculator/static/media/Bonobo Bold.8924d49e99d552021e1c.ttf",
-    "static/media/Icon_Intertwined_Fate.png": "/wish-calculator/static/media/Icon_Intertwined_Fate.81f80cc7d7762b7f6e22.png",
-    "static/media/Icon_Acquaint_Fate.png": "/wish-calculator/static/media/Icon_Acquaint_Fate.564d84db3e28f20c54ea.png",
-    "static/media/Icon_Genesis_Crystal.png": "/wish-calculator/static/media/Icon_Genesis_Crystal.16c932c4bb633ad87b0e.png",
-    "static/media/Icon_Primogem.png": "/wish-calculator/static/media/Icon_Primogem.b9823f8226d954971e9d.png",
-    "index.html": "/wish-calculator/index.html",
-    "main.b42d1d80.css.map": "/wish-calculator/static/css/main.b42d1d80.css.map",
-    "main.4d69415b.js.map": "/wish-calculator/static/js/main.4d69415b.js.map",
-    "787.a90ab6a4.chunk.js.map": "/wish-calculator/static/js/787.a90ab6a4.chunk.js.map"
+    "main.css": "/wish_calculator/static/css/main.e80be166.css",
+    "main.js": "/wish_calculator/static/js/main.1a649488.js",
+    "static/js/787.a90ab6a4.chunk.js": "/wish_calculator/static/js/787.a90ab6a4.chunk.js",
+    "static/media/Icon_WishCalc.png": "/wish_calculator/static/media/Icon_WishCalc.f1421c0dcd1fd65a25f3.png",
+    "static/media/Bonobo Bold.ttf": "/wish_calculator/static/media/Bonobo Bold.8924d49e99d552021e1c.ttf",
+    "static/media/Icon_Intertwined_Fate.png": "/wish_calculator/static/media/Icon_Intertwined_Fate.81f80cc7d7762b7f6e22.png",
+    "static/media/Icon_Acquaint_Fate.png": "/wish_calculator/static/media/Icon_Acquaint_Fate.564d84db3e28f20c54ea.png",
+    "static/media/Icon_Genesis_Crystal.png": "/wish_calculator/static/media/Icon_Genesis_Crystal.16c932c4bb633ad87b0e.png",
+    "static/media/Icon_Primogem.png": "/wish_calculator/static/media/Icon_Primogem.b9823f8226d954971e9d.png",
+    "index.html": "/wish_calculator/index.html",
+    "main.e80be166.css.map": "/wish_calculator/static/css/main.e80be166.css.map",
+    "main.1a649488.js.map": "/wish_calculator/static/js/main.1a649488.js.map",
+    "787.a90ab6a4.chunk.js.map": "/wish_calculator/static/js/787.a90ab6a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b42d1d80.css",
-    "static/js/main.4d69415b.js"
+    "static/css/main.e80be166.css",
+    "static/js/main.1a649488.js"
   ]
 }
