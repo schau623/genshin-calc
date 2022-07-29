@@ -1,8 +1,8 @@
 {
-  "name": "genshin-calculator",
+  "name": "wish-calculator",
+  "homepage": "https://schau9919.github.io/wish-calculator/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://schau623.github.io/wish_calc",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
