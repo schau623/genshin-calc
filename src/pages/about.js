@@ -10,7 +10,10 @@ export default function About() {
     return (
         <>
             <div className="about">
-                <Navbar/>
+            <div className="home_navbar">
+                <Navbar/> 
+            </div>
+            <div className ="about_wrapper">
                 <div className="content">
                     <div className="content_box">
                         <div className="content_border">
@@ -33,6 +36,7 @@ export default function About() {
                         </div>
                     </div>
                     <Footer/>
+                </div>
                 </div>
             </div>
         </>
