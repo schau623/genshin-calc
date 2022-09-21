@@ -6,6 +6,7 @@
     font-weight: 700;
     color: rgb(101, 102, 99);
     font-size:20px;
+    
 }
 
 @font-face {
@@ -15,14 +16,17 @@
 
 html{
     background-color: rgb(218, 213, 203);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .container {
-    margin-top: 102px;
-    padding-bottom: 10px;
     font-size: larger;
+    height: 100%;
 }
-
+.wrapper {
+    height: 100%;
+}
 .num_input {
     border-radius: 10px;
     height:40px;
@@ -37,6 +41,8 @@ html{
 }
 
 .content {
+    display:flex;
+    flex-direction: column;
     width: 90vw;
     margin: 0 auto;
 }
@@ -102,11 +108,7 @@ html{
         font-size: 25px;
     }
     
-    .desc {
-        font-size: 20px;
-    }
-    
-    .num_input {
+    .desc, .num_input {
         font-size: 20px;
     }
 }

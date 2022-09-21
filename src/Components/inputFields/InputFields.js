@@ -193,6 +193,9 @@ export default function InputFields( {setPrimoCount, setGenCount, setIntFateCoun
                         </div>
                     </div>
                 </div>
+                <div className="content_box" id="empty">
+                    
+                </div>
             </div>
         </form>
     );

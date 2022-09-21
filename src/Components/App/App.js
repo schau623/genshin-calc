@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route index element = {<Home/>}/>
           <Route path = "conversion" element = {<Conversion/>}/>
-          <Route path ="faq" element ={<FAQ/>} />
+          <Route path = "faq" element ={<FAQ/>} />
           <Route path = "about" element = {<About/>}/>
         </Routes>
       </HashRouter>

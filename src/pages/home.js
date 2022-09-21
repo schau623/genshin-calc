@@ -21,32 +21,37 @@ export default function Home (){
     return (
         <>
             <div className = "home">
-                <Navbar/>
-                <div className="sidebar">
-                    <InputFields 
-                        setPrimoCount = {setPrimoCount} 
-                        setGenCount = {setGenCount}
-                        setIntFateCount = {setIntFateCount}
-                        setAcqFateCount = {setAcqFateCount}
-                        setCharCount = {setCharCount}
-                        setWeapCount = {setWeapCount}
-                        setStdCount = {setStdCount}
-                    />
+                <div className="home_navbar">
+                    <Navbar/> 
                 </div>
-                <div className="content">
-                    <Calculators 
-                        primoCount = {primoCount}
-                        genCount = {genCount}
-                        intFateCount = {intFateCount}
-                        acqFateCount = {acqFateCount}
-                        charCount = {charCount}
-                        weapCount = {weapCount}
-                        stdCount = {stdCount}
-                    />
-                    <Footer/>
+                <div className = "home_wrapper">
+                    
+                    <div className="sidebar">
+                        <InputFields 
+                            setPrimoCount = {setPrimoCount} 
+                            setGenCount = {setGenCount}
+                            setIntFateCount = {setIntFateCount}
+                            setAcqFateCount = {setAcqFateCount}
+                            setCharCount = {setCharCount}
+                            setWeapCount = {setWeapCount}
+                            setStdCount = {setStdCount}
+                        />
+                    </div>
+                    <div className="content">
+                        
+                        <Calculators 
+                            primoCount = {primoCount}
+                            genCount = {genCount}
+                            intFateCount = {intFateCount}
+                            acqFateCount = {acqFateCount}
+                            charCount = {charCount}
+                            weapCount = {weapCount}
+                            stdCount = {stdCount}
+                        />
+                        <Footer/>
+                    </div>
                 </div>
             </div>
-            
         </>
     );
 }
